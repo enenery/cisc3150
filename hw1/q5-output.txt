@@ -1,0 +1,8 @@
+Points: (0.0, 0.0), (0.0, 0.0), (0.0, 0.0)
+-> You don't have a real triangle.
+Points: (0.0, 0.0), (3.0, 0.0), (0.0, 6.0)
+ -> You have a real triangle.
+Points: (0.0, 0.0), (3.0, 1.0), (-1.0, -6.0)
+ -> You have a real triangle.
+Points: (0.0, 0.0), (3.0, 0.0), (-3.0, 0.0)
+-> You don't have a real triangle.
