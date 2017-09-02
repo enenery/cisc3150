@@ -1,0 +1,31 @@
+Centers of two circles: (0.0, 3.0), (6.0, 0.0)
+radius1: 1.0, radius2: 1.0
+[touch? --- NO.] 
+[overlap? --- NO.] 
+[inside? --- NO.]
+ ~ circles are separate from each other. ~
+
+Centers of two circles: (0.0, 0.0), (4.0, 0.0)
+radius1: 2.0, radius2: 2.0
+[touch? --- YES.] 
+[overlap? --- NO.] 
+[inside? --- NO.]
+
+Centers of two circles: (4.0, 0.0), (6.0, 0.0)
+radius1: 2.0, radius2: 1.0
+[touch? --- NO.] 
+[overlap? --- YES.] 
+[inside? --- NO.]
+
+Centers of two circles: (0.0, 0.0), (0.0, 0.0)
+radius1: 1.0, radius2: 1.0
+[touch? --- YES.] 
+[overlap? --- NO.] 
+[inside? --- NO.]
+
+Centers of two circles: (0.0, 0.0), (0.0, 0.0)
+radius1: 2.0, radius2: 1.0
+[touch? --- NO.] 
+[overlap? --- NO.] 
+[inside? --- YES.]
+
