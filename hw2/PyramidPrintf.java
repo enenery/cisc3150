@@ -16,6 +16,7 @@ public class PyramidPrintf {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the height of a pyramid in integer: ");
         int height = scanner.nextInt();
+        System.out.print(height + System.lineSeparator());
         printPyramid(height);
     }
 
@@ -27,9 +28,11 @@ public class PyramidPrintf {
             output = getOutput(row+1);
             numSpace = ((2*height-1) - output.length())/2;
             if(numSpace > 0)
-                System.out.printf("%" + numSpace + "c" + "%s" + "%" + numSpace + "c\n", ' ', output, ' ');
+                System.out.printf("%" + numSpace + "c" + "%s" + "%" + numSpace + "c", ' ', output, ' ');
             else
                 System.out.print(output);
+
+            System.out.print(System.lineSeparator());
         }
     }
 

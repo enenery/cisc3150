@@ -16,6 +16,5 @@ public class CommaSeparated {
         scanner.useDelimiter(",");
         while(scanner.hasNext())
             System.out.println(scanner.next());
-        scanner.close();
     }
 }

@@ -1,0 +1,8 @@
+ANSWER:
+The reason why case 1 seems to shift x by 1 instead of i is because the value in x never 	changes. I found this myself by printing out the x.
+The reason why case 1 seems to start its shifting from all over again when i = 32 is
+because integer is a size of 32 bit so dividing an integer by 2 for greater or
+equal to 32 times doesn't make sense so java instead directs to dividable numbers such
+as 32 -> 0, 33 -> 1, 34 -> 2, etc. I found this from here: http://javarevisited.blogspot.com/2013/03/bitwise-and-bitshift-operators-in-java-and-or-xor-left-right-shift-example-tutorial.html
+In it, it says "If number of shift positions exceeds with number of bits in a variable, then remainder operator is used to calculate effective bit movement.
+For example int variables contains 32 bit, and if you shift bits to 33 times, then its equivalent of shifting bits 33%32 or just 1 time. e.g. 8 >> 33 is equal to 8 >> 1 and this is true for all bit shift operators.

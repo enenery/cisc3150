@@ -1,0 +1,1 @@
+Is madamimadam a palindrome? true

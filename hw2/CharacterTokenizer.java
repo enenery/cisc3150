@@ -16,5 +16,8 @@ public class CharacterTokenizer {
         while(in.hasNext()){
             System.out.println(in.next());
         }
+
+        in.close();
+        System.exit(0);
     }
 }

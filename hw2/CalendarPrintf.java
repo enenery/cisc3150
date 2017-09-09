@@ -15,8 +15,11 @@ public class CalendarPrintf {
         System.out.print("Enter year: ");
         Scanner scanner = new Scanner(System.in);
         int year = scanner.nextInt();
+        System.out.print(year);
+        System.out.print(System.lineSeparator());
         System.out.print("Enter what day the first of January fell on for that year: ");
         String day = scanner.next();
+        System.out.print(day);
         printCalendar(year, day);
     }
 
@@ -29,17 +32,17 @@ public class CalendarPrintf {
         day = day.toLowerCase();
         if(day.contains("su"))
             startDay = 0;
-        else if (day.contains("mo"))
+        else if (day.contains("monday"))
             startDay = 1;
-        else if (day.contains("tu"))
+        else if (day.contains("tuesday"))
             startDay = 2;
-        else if (day.contains("we"))
+        else if (day.contains("wednesday"))
             startDay = 3;
-        else if (day.contains("th"))
+        else if (day.contains("thursday"))
             startDay = 4;
-        else if (day.contains("fr"))
+        else if (day.contains("friday"))
             startDay = 5;
-        else if (day.contains("sa"))
+        else if (day.contains("saturday"))
             startDay = 6;
 
 
@@ -98,16 +101,21 @@ public class CalendarPrintf {
                     break;
             }
 
+            System.out.print(System.lineSeparator() + System.lineSeparator());
             System.out.printf("\n\n%12s%1c%-10d\n", month, ' ', year);
+            System.out.print(System.lineSeparator());
             System.out.printf("%s\n", daysForDisplay);
+            System.out.print(System.lineSeparator());
 
             for(int j = 0; j < startDay; j++){
                 System.out.printf("%3c", ' ');
             }
 
             for(int k = 1; k <= days; k++){
-                if((startDay + k) % 7 == 0)
+                if((startDay + k) % 7 == 0) {
                     System.out.printf("%3d\n", k);
+                    System.out.print(System.lineSeparator());
+                }
                 else
                     System.out.printf("%3d", k);
             }

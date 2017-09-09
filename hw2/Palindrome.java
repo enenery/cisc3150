@@ -9,7 +9,8 @@
 public class Palindrome {
 
     public static void main(String args[]){
-        System.out.println(palindrome("madamimadam"));
+        String sample = "madamimadam";
+        System.out.println("Is " + sample + " a palindrome? " + palindrome(sample));
     }
 
     public static boolean palindrome(String word){

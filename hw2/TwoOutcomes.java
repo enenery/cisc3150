@@ -25,13 +25,13 @@ public class TwoOutcomes {
         //this is to show that shifting an integer by 32 is equivalent to shifting by 0.
         int numTest = 3;
         System.out.printf("%s\t\t%32s","test",Integer.toBinaryString(numTest>>>32));
-        System.out.print(" - " + Integer.toBinaryString(numTest) + "\n");
+        System.out.print(" - " + Integer.toBinaryString(numTest) + "\n" + System.lineSeparator());
 
         //case 1
         for(int i=0;i<35;i++){
             System.out.printf("%d\t\t%32s",i,Integer.toBinaryString(x>>>i));
             //the following print out shows that x value remains as the original, which is 4282
-            System.out.print(" - " + Integer.toBinaryString(x) + "\n");
+            System.out.print(" - " + Integer.toBinaryString(x) + "\n" + System.lineSeparator());
         }
 
         System.out.println("");
@@ -39,7 +39,7 @@ public class TwoOutcomes {
         //case 2
         for(int i=0;i<35;i++){
             System.out.printf("%d\t\t%32s",i,Integer.toBinaryString(x));
-            System.out.print(" - " + Integer.toBinaryString(x) + "\n");
+            System.out.print(" - " + Integer.toBinaryString(x) + "\n" + System.lineSeparator());
             x = x >>> i;
 
         }
