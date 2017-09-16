@@ -1,0 +1,25 @@
+string1 = MyStRiNg
+
+string2 = myspring
+
+string3 = MyStRiNg
+
+string1.charAt(6) -> N
+
+string1.length() -> 8
+
+string1.substring(2, 5) -> StR
+
+string1.toLowerCase() -> mystring
+
+string1.toUpperCase() -> MYSTRING
+
+string1.equals(string2) -> false
+
+string1.equals(string3) -> true
+
+string1.getMyString() -> MyStRiNg
+
+string1.toString() -> MyStRiNg
+
+MyString.valueOf(9162017) -> 9162017
