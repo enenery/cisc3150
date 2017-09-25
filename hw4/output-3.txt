@@ -1,0 +1,2 @@
+How many Queens do you want to place?  - 3
+For 3 Queens, there are 0 solutions.
