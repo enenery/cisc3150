@@ -1,0 +1,8 @@
+radius: 10.0
+area of a quadrant circle: (pi*r^2)/4
+area of a square that covers the circle: r^2
+areaRatio: 0.7853981633974483
+total # of dots in quartered circle: 3141614912
+total # of dots in square: 4000000000
+ratio: 0.785403728
+piValue (ratio*4): 3.141614912
