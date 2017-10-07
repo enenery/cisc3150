@@ -1,0 +1,3 @@
+hasShape true
+set hasShape to false
+hasShape false

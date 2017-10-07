@@ -1,0 +1,24 @@
+Answers for Question 2:
+
+a: Woof, woof, woof!
+--- an example of overloading
+
+b: I'm a cat, go away!
+--- an example of overriding/polymorphism
+
+c: compile time error because a method 'call()' doesn't exist in object class
+
+d: Pet@1db9742
+
+e: woof!
+-- an example of overriding/polymorphism
+
+f: Come here, kitty? ... Don't waste my time.
+-- an example of overriding
+
+g: compile time error because Cat class has no method 'call(int)'
+
+h: four
+-- an example of polymorphism
+
+i: compile time error because Pet class has no method 'call(int)'
