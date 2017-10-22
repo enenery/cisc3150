@@ -1,0 +1,6 @@
+Run q2Output.java first and then run q2Input.java.
+The result is that static and transient are not printed.
+
+0
+10
+0
