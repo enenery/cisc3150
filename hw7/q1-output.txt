@@ -1,0 +1,21 @@
+$ java Calculator
+Exception in thread "main" UserIsADumbassException: Please enter some expression for calculation.
+	at Calculator.calculate(Calculator.java:9)
+	at Calculator.main(Calculator.java:209)
+
+$ java Calculator 2 + /
+Exception in thread "main" LookAtMrAlgebraOverHereException: Expected a number and found something else.
+	at Calculator.calculate(Calculator.java:199)
+	at Calculator.main(Calculator.java:209)
+
+$ java Calculator 2 / 0
+Exception in thread "main" java.lang.ArithmeticException
+	at Calculator.calculate(Calculator.java:56)
+	at Calculator.main(Calculator.java:209)
+
+$ java Calculator  ( 2 + 3 ) @ 2
+10.0
+
+$ java Calculator ( 2 + 3 ) % ( 5 - 2 )
+2.0
+
