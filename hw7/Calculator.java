@@ -50,10 +50,10 @@ public class Calculator{
 					if(nums.size() == 2  && !opes.empty() && pares.empty()){
 						if(opes.peek() == '@' || opes.peek() == '/' || opes.peek() == '%'){
 							right = nums.pop();
-							if(right == 0)
-								throw new ArithmeticException();
 							left = nums.pop();
 							middle = opes.pop();
+							if(right == 0 && middle == '/')
+								throw new ArithmeticException();
 							result = 0;
 
 							switch(middle){
@@ -87,10 +87,10 @@ public class Calculator{
 								pares.pop();
 								if(nums.size() > 1 && opes.size() > 0){
 									right = nums.pop();
-									if(right == 0)
-										throw new ArithmeticException();
 									left = nums.pop();
 									middle = opes.pop();
+									if(right == 0 && middle == '/')
+										throw new ArithmeticException();
 									result = 0;
 
 									switch(middle){
@@ -127,10 +127,10 @@ public class Calculator{
 									if(pares.empty() && !opes.empty()){
 										if(opes.peek() == '@' || opes.peek() == '/' || opes.peek() == '%'){
 										right = nums.pop();
-										if(right == 0)
-											throw new ArithmeticException();
 										left = nums.pop();
 										middle = opes.pop();
+										if(right == 0 && middle == '/')
+											throw new ArithmeticException();
 										result = 0;
 
 										switch(middle){
@@ -166,10 +166,10 @@ public class Calculator{
 		else{
 			while(nums.size() > 1 && opes.size() > 0){
 				right = nums.pop();
-				if(right == 0)
-					throw new ArithmeticException();
 				left = nums.pop();
 				middle = opes.pop();
+				if(right == 0 && middle == '/')
+					throw new ArithmeticException();
 				result = 0;
 
 				switch(middle){
