@@ -194,10 +194,14 @@ public class Calculator{
 
 				nums.push(result);
 			}
-			if(nums.size() == 1)
-				System.out.println(nums.pop());
-			else
-				throw new IllegalOperationException();
+			
+				if(opes.size() > 0)
+					throw new LookAtMrAlgebraOverHereException();
+
+				if(nums.size() == 1)
+					System.out.println(nums.pop());
+				else
+					throw new IllegalOperationException();
 		}
 	}
 
