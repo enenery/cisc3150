@@ -1,0 +1,8 @@
+Question: Also, figure out why the program stopped running when we used 
+Thread.sleep(), and we right clicked/marked the DOS window.
+
+I found some potential explanation here: https://superuser.com/questions/459609/what-does-it-do-exactly-if-i-click-in-the-window-of-cmd
+Once you click into the Command Prompt window, the console host will no longer allow output to be written. The application itself keeps running, but nothing is written to the screen.
+
+I have ran the program on my Linux terminal and clicked Copy which is equivalent to Mark in the Windows terminal and the program did not stop. So it should be an error on Windows cmd.
+
